@@ -1,0 +1,757 @@
+/* Nexus AI WP Translator Admin Styles */
+
+/* Content Management Tabs */
+.nexus-ai-wp-content-tabs {
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+.nexus-ai-wp-content-tabs .nav-tab-wrapper {
+    border-bottom: 1px solid #ccd0d4;
+    margin: 0;
+    padding: 0 20px;
+    background: #f9f9f9;
+}
+
+.nexus-ai-wp-content-tabs .tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.nexus-ai-wp-content-tabs .tab-content.active {
+    display: block;
+}
+
+.nexus-ai-wp-content-tabs .tab-content h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Posts List in Tabs */
+.nexus-ai-wp-content-tabs .wp-list-table {
+    margin-top: 10px;
+}
+
+.nexus-ai-wp-content-tabs .wp-list-table th,
+.nexus-ai-wp-content-tabs .wp-list-table td {
+    padding: 12px;
+}
+
+.translate-post-btn {
+    margin-right: 5px;
+}
+
+.translate-post-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.nexus-ai-wp-translator-dashboard {
+    margin-top: 20px;
+}
+
+/* Statistics Cards */
+.nexus-ai-wp-stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.nexus-ai-wp-stat-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.nexus-ai-wp-stat-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.nexus-ai-wp-stat-card .stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0073aa;
+}
+
+/* Quick Actions */
+.nexus-ai-wp-quick-actions {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.nexus-ai-wp-quick-actions h2 {
+    margin-top: 0;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Recent Activity */
+.nexus-ai-wp-recent-activity {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.nexus-ai-wp-recent-activity h2 {
+    margin-top: 0;
+}
+
+/* System Status */
+.nexus-ai-wp-system-status {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.nexus-ai-wp-system-status h2 {
+    margin-top: 0;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-success, .status-completed {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-error, .status-failed {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.status-warning, .status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeaa7;
+}
+
+.status-processing {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+.status-source_deleted,
+.status-translation_deleted {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Settings Tabs */
+.nexus-ai-wp-settings-tabs {
+    margin-top: 20px;
+}
+
+.tab-content {
+    display: none;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-top: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* API Test Result */
+#api-test-result {
+    margin-top: 10px;
+}
+
+#api-test-result .notice {
+    margin: 10px 0 0 0;
+    padding: 8px 12px;
+}
+
+/* Translation Meta Box */
+.nexus-ai-wp-translator-meta-box {
+    margin: 10px 0;
+}
+
+.nexus-ai-wp-meta-field {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.nexus-ai-wp-meta-field:last-child {
+    border-bottom: none;
+}
+
+.nexus-ai-wp-meta-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.nexus-ai-wp-translations-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nexus-ai-wp-translation-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nexus-ai-wp-translation-item:last-child {
+    border-bottom: none;
+}
+
+.language-code {
+    background: #f0f0f1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.nexus-ai-wp-translation-actions {
+    margin-top: 10px;
+}
+
+.target-languages {
+    margin-bottom: 15px;
+}
+
+.target-languages label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.target-languages input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#nexus-ai-wp-translation-status {
+    margin-top: 15px;
+}
+
+/* Logs */
+.nexus-ai-wp-logs-filters {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.nexus-ai-wp-logs-filters form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.log-message-short,
+.log-message-full {
+    display: inline;
+}
+
+.expand-message,
+.collapse-message {
+    color: #0073aa;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.expand-message:hover,
+.collapse-message:hover {
+    color: #005177;
+    text-decoration: underline;
+}
+
+/* Relationships */
+.nexus-ai-wp-bulk-actions {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.nexus-ai-wp-bulk-actions h2 {
+    margin-top: 0;
+}
+
+.deleted-post {
+    color: #a00;
+    font-style: italic;
+}
+
+.post-status {
+    color: #666;
+    font-size: 11px;
+}
+
+/* Posts List Columns */
+.column-nexus_ai_wp_language,
+.column-nexus_ai_wp_translations {
+    width: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nexus-ai-wp-stats-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nexus-ai-wp-logs-filters form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nexus-ai-wp-translation-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+}
+
+/* Loading States */
+.nexus-ai-wp-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.nexus-ai-wp-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: nexus-ai-wp-spin 1s linear infinite;
+    margin-right: 5px;
+}
+
+@keyframes nexus-ai-wp-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Notices */
+.nexus-ai-wp-notice {
+    margin: 15px 0;
+}
+
+.nexus-ai-wp-notice.inline {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+/* Tables */
+.nexus-ai-wp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.nexus-ai-wp-table th,
+.nexus-ai-wp-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.nexus-ai-wp-table th {
+    background-color: #f9f9f9;
+    font-weight: 600;
+}
+
+.nexus-ai-wp-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Form Elements */
+.nexus-ai-wp-form-group {
+    margin-bottom: 20px;
+}
+
+.nexus-ai-wp-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nexus-ai-wp-form-group .description {
+    margin-top: 5px;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Button Variations */
+.nexus-ai-wp-button-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+
+.nexus-ai-wp-button-danger:hover,
+.nexus-ai-wp-button-danger:focus {
+    background-color: #c82333;
+    border-color: #bd2130;
+    color: #fff;
+}
+
+.nexus-ai-wp-button-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
+}
+
+.nexus-ai-wp-button-success:hover,
+.nexus-ai-wp-button-success:focus {
+    background-color: #218838;
+    border-color: #1e7e34;
+    color: #fff;
+}
+
+/* Translation Progress Popup */
+.nexus-ai-wp-progress-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nexus-ai-wp-progress-popup.show {
+    display: flex;
+}
+
+.nexus-ai-wp-progress-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nexus-ai-wp-progress-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.nexus-ai-wp-progress-close:hover {
+    background: #f0f0f0;
+    color: #333;
+}
+
+.nexus-ai-wp-progress-header {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-right: 30px;
+}
+
+.nexus-ai-wp-progress-header h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #23282d;
+}
+
+.nexus-ai-wp-progress-header p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.nexus-ai-wp-progress-languages {
+    margin-bottom: 20px;
+}
+
+.nexus-ai-wp-progress-language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.nexus-ai-wp-progress-language.processing {
+    border-color: #0073aa;
+    background: #e7f3ff;
+}
+
+.nexus-ai-wp-progress-language.completed {
+    border-color: #46b450;
+    background: #ecf7ed;
+}
+
+.nexus-ai-wp-progress-language.error {
+    border-color: #dc3232;
+    background: #ffeaea;
+}
+
+.nexus-ai-wp-progress-language-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nexus-ai-wp-progress-language-name {
+    font-weight: 600;
+    color: #23282d;
+    font-size: 14px;
+}
+
+.nexus-ai-wp-progress-language-code {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.nexus-ai-wp-progress-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nexus-ai-wp-progress-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nexus-ai-wp-progress-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ddd;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: nexus-ai-wp-progress-spin 1s linear infinite;
+}
+
+.nexus-ai-wp-progress-check {
+    width: 16px;
+    height: 16px;
+    background: #46b450;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nexus-ai-wp-progress-check::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.nexus-ai-wp-progress-error {
+    width: 16px;
+    height: 16px;
+    background: #dc3232;
+    border-radius: 50%;
+    position: relative;
+}
+
+.nexus-ai-wp-progress-error::after {
+    content: '✕';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+@keyframes nexus-ai-wp-progress-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.nexus-ai-wp-progress-summary {
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nexus-ai-wp-progress-summary.success {
+    background: #ecf7ed;
+    border: 1px solid #46b450;
+    color: #2e7d32;
+}
+
+.nexus-ai-wp-progress-summary.error {
+    background: #ffeaea;
+    border: 1px solid #dc3232;
+    color: #c62828;
+}
+
+.nexus-ai-wp-progress-buttons {
+    text-align: center;
+}
+
+.nexus-ai-wp-progress-buttons .button {
+    margin: 0 5px;
+}
+
+/* Manual Linking Styles */
+.nexus-ai-wp-manual-linking {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.linking-controls {
+    margin: 15px 0;
+}
+
+.linking-controls .button {
+    margin-right: 10px;
+}
+
+.linking-status {
+    background: #e7f3ff;
+    border: 1px solid #b6d7ff;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.selected-article-tag {
+    display: inline-block;
+    background: #0073aa;
+    color: white;
+    padding: 4px 8px;
+    margin: 2px 4px 2px 0;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.nexus-ai-wp-link-cell {
+    width: 50px;
+    text-align: center;
+}
+
+.nexus-ai-wp-link-checkbox {
+    margin: 0;
+}
+
+.post-actions .dashicons {
+    vertical-align: middle;
+}
+
+.remove-links-btn {
+    margin-right: 5px;
+}
+
+/* Log Status Styles */
+.status-throttle {
+    background: #ffeaea !important;
+    color: #d63638 !important;
+    border: 1px solid #d63638 !important;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.status-timeout {
+    background: #fff3e0 !important;
+    color: #f56e28 !important;
+    border: 1px solid #f56e28 !important;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.log-message {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: help;
+}
+
+.no-message {
+    color: #999;
+    font-style: italic;
+}
+
+.status-warning {
+    color: #f56e28;
+    font-weight: bold;
+}
